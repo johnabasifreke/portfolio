@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academic Planner | John Abasifreke</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site-header"><a class="brand" href="index.html">John Abasifreke</a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main><section class="wrap narrow"><h1>Academic planner</h1>
+<p class="lead">Add assignments, mark them done and delete them. Your list is saved in this browser.</p>
+<form id="task-form" class="row"><label class="sr-only" for="task-input">New task</label>
+<input id="task-input" type="text" placeholder="e.g. Submit COS 106 project" autocomplete="off">
+<button class="btn" type="submit">Add task</button></form>
+<p id="task-error" class="error" role="alert"></p>
+<p id="task-count" aria-live="polite"></p>
+<ul id="task-list" class="tasks"></ul></section></main>
+<footer><p>&copy; 2026 John Abasifreke. Built for COS 106, MIVA Open University.</p></footer>
+<script src="js/main.js"></script><script src="js/planner.js"></script></body></html>
