@@ -1,6 +1,6 @@
 # John Abasifreke: Personal Academic Portfolio and Student Planner
 
-A responsive, multi-page website that works as a personal academic portfolio and a simple student management tool. It was built for COS 106: Introduction to Web Technologies at MIVA Open University.
+A responsive, multi-page website that works as a personal academic portfolio and a simple student management tool. It was built for **COS 106: Introduction to Web Technologies** at MIVA Open University.
 
 - **Live website:** https://johnabasifreke.github.io/portfolio/
 - **GitHub repository:** https://github.com/johnabasifreke/portfolio
@@ -22,6 +22,8 @@ I am a Software Engineering student, a Product Manager and the founder of EasiBo
 ### Interactive features (JavaScript)
 
 - **Mobile navigation menu:** a button that opens and closes the menu on small screens (`js/main.js`).
+- **Dark mode:** a button in the menu switches between light and dark colours and remembers the choice with `localStorage` (`js/main.js` and CSS variables in `css/style.css`).
+- **Scroll animation:** headings, tables, videos and project cards fade in as they scroll into view, using the `IntersectionObserver` API (`js/main.js`).
 - **Academic planner:** add, tick and delete tasks, with a live count of tasks still to do. Tasks are stored in `localStorage` so they stay after a refresh (`js/planner.js`).
 - **Contact form validation:** no field may be empty, the email must have a valid format, and the phone number must contain digits only. Errors show under the field (`js/contact.js`).
 
@@ -30,7 +32,8 @@ I am a Software Engineering student, a Product Manager and the founder of EasiBo
 - One external stylesheet (`css/style.css`) with a consistent teal and yellow colour scheme
 - Responsive layout using Flexbox and CSS Grid
 - A navigation bar that turns into a menu on mobile
-- Hover transitions on buttons, links and cards, and an entrance animation on the photo and task items
+- Hover transitions on buttons, links and cards, an entrance animation on the photo and task items, and a fade-in effect for content as you scroll
+- Colours stored as CSS variables, so a light and a dark theme can share one stylesheet
 - Respects the "reduce motion" setting for users who prefer less movement
 
 ## Technologies
